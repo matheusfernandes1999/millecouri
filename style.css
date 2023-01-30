@@ -404,7 +404,7 @@ footer {
 
 main.cards h1{
         position: absolute;
-        top: -13%;
+        top: -5%;
         left: auto;
         display: flex;
         flex-direction: row;
@@ -422,7 +422,6 @@ main.cards {
 main.cards section.card {
         margin-left: 0;
         margin-bottom: 32px;
-	margin-top: -30%;
 }
 
 main.cards section.card:last-child {

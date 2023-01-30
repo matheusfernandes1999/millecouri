@@ -397,7 +397,7 @@ footer {
 .pontoum {
 
     position: absolute;
-    top: -12%;
+    top: -10%;
     left: auto;
 
 }
@@ -415,7 +415,7 @@ main.cards h1{
 
 main.cards {
         flex-direction: column;
-        top: 160%;
+        top: 150%;
         gap: 20px;
 }
 
@@ -437,7 +437,7 @@ main.cards section.card button {
 
 .contato-principal {
     position: absolute;
-    top: 445%;
+    top: 470%;
     max-width: 83%;
 }
 

@@ -438,6 +438,7 @@ main.cards section.card button {
 .contato-principal {
     position: absolute;
     top: 445%;
+    max-width: 70%;
 }
 
 main.contato-principal h1{
@@ -454,7 +455,6 @@ main.contato-principal h1{
 .contatoaqui {
     display: table-column;
     vertical-align: middle;
-    max-width: 95%;
     margin-top: 20%;
     margin-left: 5%;
 
@@ -483,8 +483,8 @@ main.contato-principal section.contatoaqui span {
 .icon {
     width: 250px;
     height: 250px;
-    max-width: 90%;
-    margin-top: 5%;
+    max-width: 80%;
+    margin-top: 10%;
 }
 
 .botaocontato{
@@ -493,8 +493,6 @@ main.contato-principal section.contatoaqui span {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    max-width: 80%;
-
 }
 
 .instagram {
@@ -505,9 +503,9 @@ main.contato-principal section.contatoaqui span {
     font-size: 80%;
     font-weight: 300;
     margin-bottom: 16px 0;
-    min-width: 150px;
+    min-width: 120px;
     min-height: 50px;
-    max-width: 90%;
+    max-width: 70%;
     max-height: 90%;
     font-size: 90%;
     color:#FFF;
@@ -526,9 +524,9 @@ main.contato-principal section.contatoaqui span {
     font-weight: 300;
     margin-bottom: 16px 0;
     font-size: 90%;
-    min-width: 150px;
+    min-width: 120px;
     min-height: 50px;
-    max-width: 90%;
+    max-width: 70%;
     max-height: 90%;
     background-color:#25d366;
 	color:#FFF;
@@ -558,7 +556,7 @@ main.contato-principal section.contatoaqui span {
 
 footer {
     position: absolute;
-    top: 600%;
+    top: 570%;
     text-align: center;
     padding: 10px;
     gap: 20px;
@@ -567,5 +565,3 @@ footer {
     display: flex;
     flex-direction: row;
   }
-
-}

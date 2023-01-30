@@ -344,7 +344,7 @@ footer {
  
 .cabecalho {
         position: absolute;
-        top: 3%;
+        top: 1%;
         left: auto;
         display: flex;
         flex-direction: row;
@@ -415,7 +415,7 @@ main.cards h1{
 
 main.cards {
         flex-direction: column;
-        top: 140%;
+        top: 130%;
         gap: 20px;
 }
 
@@ -437,7 +437,7 @@ main.cards section.card button {
 
 .contato-principal {
     position: absolute;
-    top: 395%;
+    top: 390%;
     max-width: 83%;
 }
 
@@ -550,7 +550,7 @@ main.contato-principal section.contatoaqui span {
 
 footer {
     position: absolute;
-    top: 540%;
+    top: 510%;
     text-align: center;
     padding: 10px;
     gap: 10px;

@@ -141,6 +141,7 @@ main.cards section.card span {
     max-width: 240px;
     font-size: 80%;
     margin-bottom: 16px;
+    min-height: 80px;
 }
 
 
@@ -153,6 +154,7 @@ main.cards section.card button {
     font-size: 80%;
     font-weight: 500;
     color: white;
+    margin-bottom: 16px 0;
 }
 
 

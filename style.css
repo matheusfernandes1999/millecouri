@@ -377,7 +377,7 @@ footer {
 .landing-page {
         
       position: absolute;
-      top: 50%;
+      top: auto;
       left: 50%;
       transform: translate(-50%, -50%);
       max-width: 85%;
@@ -438,7 +438,7 @@ main.cards section.card button {
 .contato-principal {
     position: absolute;
     top: 445%;
-    max-width: 70%;
+    max-width: 83%;
 }
 
 main.contato-principal h1{
@@ -492,7 +492,7 @@ main.contato-principal section.contatoaqui span {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .instagram {
@@ -503,11 +503,8 @@ main.contato-principal section.contatoaqui span {
     font-size: 80%;
     font-weight: 300;
     margin-bottom: 16px 0;
-    min-width: 120px;
-    min-height: 50px;
-    max-width: 70%;
-    max-height: 90%;
-    font-size: 90%;
+    min-width: fit-content;
+    max-height: fit-content;
     color:#FFF;
     background: #f09433; 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
@@ -523,11 +520,8 @@ main.contato-principal section.contatoaqui span {
     font-size: 80%;
     font-weight: 300;
     margin-bottom: 16px 0;
-    font-size: 90%;
-    min-width: 120px;
-    min-height: 50px;
-    max-width: 70%;
-    max-height: 90%;
+    min-width: fit-content;
+    max-height: fit-content;
     background-color:#25d366;
 	color:#FFF;
 }

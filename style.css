@@ -415,7 +415,7 @@ main.cards h1{
 
 main.cards {
         flex-direction: column;
-        top: 120%;
+        top: 140%;
         gap: 20px;
 }
 

@@ -422,6 +422,7 @@ main.cards {
 main.cards section.card {
         margin-left: 0;
         margin-bottom: 32px;
+	margin-top: -30%;
 }
 
 main.cards section.card:last-child {

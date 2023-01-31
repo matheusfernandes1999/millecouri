@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #fdc9c2;
+
     height: 100vh;
     width: 100%;
 
@@ -17,7 +17,13 @@ body {
     align-items: center;
     
     color: #434343;
+
+    background-image: url("https://raw.githubusercontent.com/matheusfernandes1999/millecouri/main/assets/background/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
     }
+
 
 .cabecalho {
     position: absolute;
@@ -77,6 +83,12 @@ body {
 
 /*CARDS COM CATÁLOGO*/
 
+.pontoum { /*PONTO DE REFERENCIA PARA INÍCIO DO CATÁLOGO*/
+    position: absolute;
+    top: -35%;
+    left: auto;
+}
+
 main.cards {
     display: flex;
     flex-direction: row;
@@ -84,14 +96,6 @@ main.cards {
     position: absolute;
     top: 125%;
     margin: 0;
-}
-
-.pontoum {
-
-    position: absolute;
-    top: -35%;
-    left: auto;
-
 }
 
 main.cards h1{
@@ -173,33 +177,37 @@ main.cards section.card.produtoquatro button {
 
 main.cards section.card.produtoum {
     box-shadow: 20px 20px 50px -30px #610ee7;
+    transition: .4s ease;
 }
 main.cards section.card.produtodois {
     box-shadow: 20px 20px 50px -30px #1978dd;
+    transition: .4s ease;
 }
 main.cards section.card.produtotres {
     box-shadow: 20px 20px 50px -30px #df1656;
+    transition: .4s ease;
 }
 main.cards section.card.produtoquatro {
     box-shadow: 20px 20px 50px -30px #f0e007;
+    transition: .4s ease;
 }
 
 
 main.cards section.card.produtoum:hover {
     box-shadow: 40px 40px 60px -30px #610ee7;
-    transition: 0.4s ease-in-out;
+    transform: 2;
 }
 main.cards section.card.produtodois:hover {
     box-shadow: 40px 40px 60px -30px #1978dd;
-    transition: 0.4s;
+    transform: 2;
 }
 main.cards section.card.produtotres:hover {
     box-shadow: 40px 40px 60px -30px #df1656;
-    transition: 0.4s;
+    transform: 2;
 }
 main.cards section.card.produtoquatro:hover {
     box-shadow: 40px 40px 60px -30px #f0e007;
-    transition: 0.4s;
+    transform: 2;
 }
 
 /*SESSÃO DO CONTATO*/
@@ -237,7 +245,13 @@ main.contato-principal section.contatoaqui {
 }
 
 .contatoaqui {
-    box-shadow: 40px 40px 60px -30px #e6683c; 
+    box-shadow: 20px 20px 70px -30px #e6683c; 
+    transition: .4s ease;
+}
+
+.contatoaqui:hover {
+    box-shadow: 40px 40px 60px -30px #e6683c;
+    transform: 2;
 }
 
 main.contato-principal section.contatoaqui img {
@@ -286,6 +300,7 @@ main.contato-principal section.contatoaqui span {
     background: #f09433; 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+    transition: .4s ease;
 
 }
 
@@ -302,21 +317,22 @@ main.contato-principal section.contatoaqui span {
     min-height: 50px;
     background-color:#25d366;
 	color:#FFF;
+    transition: .4s ease;
 }
 
 .whatsapp:hover{
     background-color:#0c8639;
 	color:#FFF;
     font-weight: 400;
+    transform: 2;
 }
 
 .instagram:hover{
     background: linear-gradient(45deg, #b96812 0%, #a13711 25%, #8f0d21 50%, #860d3e 75%, #81125e 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
-
     color: #FFF;
     font-weight: 400;
- 
+    transform: 2;
 }
 
 .pontodois {

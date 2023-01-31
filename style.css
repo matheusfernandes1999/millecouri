@@ -1,114 +1,179 @@
-* {
-
-    margin: 0;
+* { margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-
+    font-family: "Poppins", sans-serif; 
+    text-decoration: none;
 }
 
-body {
-
+body{ 
     height: 100vh;
     width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
     color: #434343;
 
     background-image: url("https://raw.githubusercontent.com/matheusfernandes1999/millecouri/main/assets/background/background.jpg");
-    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed
-    }
+    background-size: cover;
+    background-attachment: fixed;
+}
 
-
-.cabecalho {
-    position: absolute;
-    top: 0;
-    left: 70%;
+.menu{
+    padding: 3%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;        
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-  }
-  
-.cabecalho-menu {
-    padding: 24px;
+}
+
+.menusuperior {
     display: flex;
-    gap: 30px;
+    gap: 45px;
+    font-size: 110%;
     align-items: center;
     word-break: keep-all;
-  }
+    width: max-content;
+}
 
-.cabecalho-menu-item {
-    display: flex;
-    text-decoration: none;
+.menusuperiorpalavra{
     color: rgb(252, 252, 252);
     font-weight: 450;
-    width: max-content
+    transition: .4s ease;
 }
 
-/*PÁGINA INICIAL*/
+.menusuperiorpalavra:hover{
+    color: rgb(212, 212, 212);
+    font-weight: 550;
+    transform: 4;
+}
 
-.landing {	
-	display: flex;
+        /*MENU MOBILE*/
+
+@media screen and (max-width: 480px){
+    .menu{
+        padding: 5%;
+        display: flex;
+        flex-direction: row;        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menusuperior {
+        display: flex;
+        gap: 15px;
+        font-size: 80%;
+        align-items: center;
+        word-break: keep-all;
+        max-width: max-content;
+    }
+    
+    .menusuperiorpalavra{
+        color: rgb(252, 252, 252);
+        font-weight: 450;
+        transition: .4s ease;
+    }
+    
+    .menusuperiorpalavra:hover{
+        color: rgb(212, 212, 212);
+        font-weight: 550;
+        transform: 4;
+    }
+}
+
+        /*LANDING PAGE*/
+
+.landing{
+    display: flex;
 	flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
 }
 
-.landing-page {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
+.paginainicial{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
-.botao {
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	top: 85%;
-	left: 50%;
-    transform: translate(-50%, -50%);
+.logo{
+    max-width: 800px;
 }
 
-.botao:hover{
+.logopequena{
+    position: relative;
+    top: 20vh;
+    width: 30px;
+    transition: .4s ease;
+}
+
+.logopequena:hover{
     width: 35px;
     height: 35px;
-    transition-duration: 0.8s;  
+    transform: 4; 
 }
 
-/*CARDS COM CATÁLOGO*/
+        /*LANDING PAGE MOBILE*/
 
-.pontoum { /*PONTO DE REFERENCIA PARA INÍCIO DO CATÁLOGO*/
-    position: absolute;
-    top: -35%;
-    left: auto;
+@media screen and (max-width: 720px){
+
+    .landing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .paginainicial{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .logo{
+        max-width: 800px;
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .logopequena{
+        position: relative;
+        top: 20vh;
+        width: 30px;
+        transition: .4s ease;
+    }
 }
 
-main.cards {
-    display: flex;
-    flex-direction: row;
-    padding: 32px;
-    position: absolute;
-    top: 125%;
+        /*CATALOGO*/
+
+main.catalogo {
     margin: 0;
+    width: 100%;
+    padding: 32px;
 }
 
-main.cards h1{
-    position: absolute;
-    top: -15%;
-    left: 33%;
+div.container div.titulocatalogo h1{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 3%;
+    font-size: 30px;
+    color: #434343;
+}
+
+.cartoes {
     display: flex;
     flex-direction: row;
-    vertical-align: middle;
+    max-width: fit-content;
+    max-height: fit-content;
+    gap: 40px;
 }
 
-main.cards section.card{
-
+.cartao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,31 +181,22 @@ main.cards section.card{
     background-color: white;
     padding: 1rem 2.3rem;
     border-radius: 64px;
-    margin-left: 40px;
-
-
 }
 
-main.cards section.card :first-child{
-    margin-left: 0;
-}
-
-main.cards section.card .icon {
+.imagem img {
     width: 200px;
-    height: 200px;
+    margin: 16px 0;
 }
 
-main.cards section.card img {
-    width: 100%;
-}
-
-
-main.cards section.card h3 {
+main.catalogo div.cartao h1 {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
     font-size: 100%;
     margin: 16px 0;
 }
 
-main.cards section.card span {
+main.catalogo span {
     font-weight: 300;
     max-width: 240px;
     font-size: 80%;
@@ -148,8 +204,9 @@ main.cards section.card span {
     min-height: 80px;
 }
 
+        /*BOTOES*/
 
-main.cards section.card button {
+div.cartoes div.cartao button {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     border-radius: 32px;
@@ -161,160 +218,238 @@ main.cards section.card button {
     margin-bottom: 16px 0;
 }
 
-
-main.cards section.card.produtoum button {
+/*STYLE DOS BOTOES*/
+div.cartoes div.cartao.um button {
     background: linear-gradient(to right, #9F66FF, #DFCBFF);
-}
-main.cards section.card.produtodois button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
-}
-main.cards section.card.produtotres button {
-    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
-}
-main.cards section.card.produtoquatro button {
-    background: linear-gradient(to right, #e6e92b, #df9610);
+    transition: .4s ease;
 }
 
-main.cards section.card.produtoum {
+div.cartoes div.cartao.dois button {
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    transition: .4s ease;
+}
+
+div.cartoes div.cartao.tres button {
+    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+    transition: .4s ease;
+}
+
+div.cartoes div.cartao.quatro button {
+    background: linear-gradient(to right, #e6e92b, #df9610);
+    transition: .4s ease;
+}
+
+/*BOTOES HOOVER*/
+div.cartoes div.cartao.um button:hover {
+    background: linear-gradient(to right, #7b4ec9, #b39fd3);
+    transform: 2;
+}
+
+div.cartoes div.cartao.dois button:hover {
+    background: linear-gradient(to right, #3170ce, #8daecc);
+    transform: 2;
+}
+
+div.cartoes div.cartao.tres button:hover {
+    background: linear-gradient(to right, #ac2c52, #b88595);
+    transform: 2;
+}
+
+div.cartoes div.cartao.quatro button:hover {
+    background: linear-gradient(to right, #b8bb11, #aa7717);
+    transform: 2;
+}
+
+
+/*SOMBRA DOS CARDS*/
+div.cartoes div.cartao.um{
     box-shadow: 20px 20px 50px -30px #610ee7;
     transition: .4s ease;
 }
-main.cards section.card.produtodois {
+
+div.cartoes div.cartao.dois{
     box-shadow: 20px 20px 50px -30px #1978dd;
     transition: .4s ease;
 }
-main.cards section.card.produtotres {
+
+div.cartoes div.cartao.tres{
     box-shadow: 20px 20px 50px -30px #df1656;
     transition: .4s ease;
 }
-main.cards section.card.produtoquatro {
+
+div.cartoes div.cartao.quatro{
     box-shadow: 20px 20px 50px -30px #f0e007;
-    transition: .4s ease;
+    transition: .4s ease;  
 }
 
 
-main.cards section.card.produtoum:hover {
+/*CARDS HOOVER*/
+div.cartoes div.cartao.um:hover {
     box-shadow: 40px 40px 60px -30px #610ee7;
     transform: 2;
 }
-main.cards section.card.produtodois:hover {
+div.cartoes div.cartao.dois:hover {
     box-shadow: 40px 40px 60px -30px #1978dd;
     transform: 2;
 }
-main.cards section.card.produtotres:hover {
+div.cartoes div.cartao.tres:hover {
     box-shadow: 40px 40px 60px -30px #df1656;
     transform: 2;
 }
-main.cards section.card.produtoquatro:hover {
+div.cartoes div.cartao.quatro:hover {
     box-shadow: 40px 40px 60px -30px #f0e007;
     transform: 2;
 }
 
-/*SESSÃO DO CONTATO*/
+        /*CATALOGO PARA MOBILE*/
+    @media screen and (max-width: 720px){
+
+        div.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        div.container div.catalogo.titulocatalogo h1{
+            display: flex;
+            justify-content: center;
+            vertical-align: middle;
+            padding: 3%;
+            font-size: 30px;
+            text-transform: uppercase;
+            min-width: max-content;
+            flex-wrap: nowrap;
+            color: #434343;
+        }
+
+        .imagem img {
+            width: 200px;
+            margin: 16px 0;
+            max-width: 100%;
+        }
+
+        div.container div.titulocatalogo h1{
+            padding: 3%;
+            font-size: 25px;
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            align-items: center;
+            text-align: center;
+        }
 
 
-.contato-principal h1{
+        main.catalogo div.cartoes   {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+}
+
+/*CONTATO*/
+main.contato {
+    margin: 0;
+    width: 100%;
+    padding: 32px;
     display: flex;
-    flex-direction: row;
-    background-color: transparent;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-left: -7%;
 }
 
-.contato-principal {
-
-    position: absolute;
-    top: 200%;
-
+main.contato section.titulocontato h1{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 3%;
+    font-size: 30px;
+    width: max-content;
+    color: #434343;
 }
 
-main.contato-principal section.contatoaqui {
-
-    background: white;
+.cartaocontato {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem 1.5rem;
+    background-color: white;
+    padding: 1rem 2.3rem;
     border-radius: 64px;
-    max-width: 400px;
-    max-height: 550px;
-    vertical-align: middle;
-    margin-top: 50px;
+    max-width: fit-content;
+    max-height: fit-content;
 }
 
-.contatoaqui {
-    box-shadow: 20px 20px 70px -30px #e6683c; 
+.cartaocontato{
+    box-shadow: 20px 20px 50px -30px #f09433;
     transition: .4s ease;
 }
 
-.contatoaqui:hover {
+.cartaocontato:hover{
     box-shadow: 40px 40px 60px -30px #e6683c;
-    transform: 2;
+    transition: 2;
 }
 
-main.contato-principal section.contatoaqui img {
-    width: 100%;
+.imagemcontato img {
+    width: 200px;
+    margin: 16px 0;
 }
 
-main.contato-principal section.contatoaqui h3 {
-    font-size: 110%;
-    margin: 18px 0;
-}
-
-main.contato-principal section.contatoaqui span {
-    font-weight: 300;
-    max-width: 310px;
+main.contato section.cartaocontato h3 {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
     font-size: 100%;
-    margin-bottom: 35px;
+    margin: 16px 0;
 }
 
-.icon {
-    width: 250px;
-    height: 250px;
+main.contato section.cartaocontato span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+    min-height: 80px;
 }
+
+        /*BOTOES*/
 
 .botaocontato{
-
     display: flex;
     flex-direction: row;
     justify-content: center;
-    top: 100%;
-    gap: 20px;
-
+    gap: 10px;
 }
 
-.instagram {
+/*STYLE DOS BOTOES*/
+.instagram{
     padding: 0.5rem 1rem;
     border-radius: 32px;
     border: 0;
     cursor: pointer;
+    text-transform: uppercase;
     font-size: 80%;
-    font-weight: 300;
+    font-weight: 350;
     margin-bottom: 16px 0;
-    min-width: 150px;
-    min-height: 50px;
-    font-size: 90%;
+    min-width: fit-content;
+    max-height: fit-content;
     color:#FFF;
     background: #f09433; 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
     transition: .4s ease;
-
 }
-
-.whatsapp {
+.whatsapp{
     padding: 0.5rem 1rem;
     border-radius: 32px;
     border: 0;
     cursor: pointer;
+    text-transform: uppercase;
     font-size: 80%;
-    font-weight: 300;
+    font-weight: 350;
     margin-bottom: 16px 0;
-    font-size: 90%;
-    min-width: 150px;
-    min-height: 50px;
+    min-width: fit-content;
+    max-height: fit-content;
     background-color:#25d366;
 	color:#FFF;
     transition: .4s ease;
@@ -323,257 +458,222 @@ main.contato-principal section.contatoaqui span {
 .whatsapp:hover{
     background-color:#0c8639;
 	color:#FFF;
-    font-weight: 400;
-    transform: 2;
+    font-weight: 450;
 }
 
 .instagram:hover{
     background: linear-gradient(45deg, #b96812 0%, #a13711 25%, #8f0d21 50%, #860d3e 75%, #81125e 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+
     color: #FFF;
-    font-weight: 400;
-    transform: 2;
-}
-
-.pontodois {
-    position: absolute;
-    top: -2%;
-    left: auto;
+    font-weight: 450;
+ 
 }
 
 
-footer {
-    position: absolute;
-    top: 320%;
-    text-align: center;
-    padding: 10px;
-    gap: 20px;
-    color: white;
+        /*CONTATO PARA MOBILE*/
+@media screen and (max-width: 720px){
+                
+main.contato {
+    margin: 0;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+main.contato section.titulocontato h1{
+    padding: 3%;
+    font-size: 25px;
     display: flex;
     flex-direction: row;
-  }
-
-
-/*SESSÃO DO CSS PARA MOBILE*/
-
-@media screen and (max-width: 720px) {
- 
- 
-.cabecalho {
-        position: absolute;
-        top: 1%;
-        left: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    color: #434343;
 }
-      
-.cabecalho-menu {
-        padding: 5%;
-        display: flex;
-        gap: 30px;
-        font-size: 100%;
-        align-items: center;
-        word-break: keep-all;
-}
- 
-.cabecalho-menu-item {
+
+.cartaocontato {
     display: flex;
-    text-decoration: none;
-    width: max-content;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 2.3rem;
+    border-radius: 64px;
+}
+
+.imagemcontato img {
+    width: 200px;
+    margin: 16px 0;
+    max-width: 80%;
+}
+
+main.contato section.cartaocontato h3 {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size: 80%;
+    margin: 16px 0;
+}
+
+main.contato section.cartaocontato span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
 }
 
 
-.landing {
-	
+
+        /*BOTOES*/
+
+        .botaocontato{
+            padding: 0.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            align-items: center;
+        }
+        
+        /*STYLE DOS BOTOES*/
+        .instagram{
+            padding: 0.5rem 1rem;
+            border-radius: 32px;
+            border: 0;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 80%;
+            font-weight: 350;
+            margin-bottom: 16px 0;
+            min-width: fit-content;
+            max-height: fit-content;
+            color:#FFF;
+            background: #f09433; 
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+            transition: .4s ease;
+            width: 70%;
+            min-width: fit-content;
+        }
+
+        .whatsapp{
+            padding: 0.5rem 1rem;
+            border-radius: 32px;
+            border: 0;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 80%;
+            font-weight: 350;
+            margin-bottom: 16px 0;
+            min-width: fit-content;
+            max-height: fit-content;
+            background-color:#25d366;
+            color:#FFF;
+            transition: .4s ease;
+            width: 70%;
+            min-width: fit-content;
+        }
+}
+
+
+/*QUEM SOMOS*/
+main.sobrenos {
+    margin: 0;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagemcontato img {
+    width: 200px;
+    margin: 16px 0;
+    max-width: 100%;
+}
+
+main.sobrenos h1{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 3%;
+    font-size: 30px;
+    width: max-content;
+    color: #434343;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 2.3rem;
+    border-radius: 64px;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.sobre{
+    box-shadow: 20px 20px 50px -30px #a13f06;
+    transition: .4s ease;
+}
+
+.sobre:hover{
+    box-shadow: 40px 40px 60px -30px #a13f06;
+    transition: 2;
+}
+
+main.sobrenos section.sobre span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    min-height: 80px;
+}
+
+/*SOBRE NOS MOBILE*/
+@media screen and (max-width: 480px){
+
+    .sobre {
         display: flex;
         flex-direction: column;
-}
-    
-.landing-page {
-        
-      position: absolute;
-      top: auto;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 85%;
-}
-    
-.botao {
-    
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        padding: 1rem 2.3rem;
+        border-radius: 64px;
+        max-width: fit-content;
+        max-height: fit-content;
+    }
+
+    .imagemsobre img {
+        width: 200px;
+        margin: 16px 0;
         max-width: 100%;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-}
+    }
 
-.pontoum {
-
-    position: absolute;
-    top: -10%;
-    left: auto;
-
-}
-
-main.cards h1{
-        position: absolute;
-        top: -5%;
-        left: auto;
+    main.sobrenos h1{
+        padding: 3%;
+        font-size: 25px;
         display: flex;
         flex-direction: row;
         width: fit-content;
         align-items: center;
         text-align: center;
-}
-
-main.cards {
-        flex-direction: column;
-        top: 130%;
-        gap: 20px;
-}
-
-main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-}
-
-main.cards section.card:last-child {
-        margin-bottom: 0;
-}
-
-main.cards section.card button {
-        font-size: 70%;
+        color: #434343;
+    }
 }
 
 
-/*CONTATO EM MOBILE*/
-
-.contato-principal {
-    position: absolute;
-    top: 390%;
-    max-width: 83%;
-}
-
-main.contato-principal h1{
-    display: table-row;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;
-    min-width: max-content;
-    vertical-align: middle;
-    font-size: 180%;
-}
-
-.contatoaqui {
-    display: table-column;
-    vertical-align: middle;
-    margin-top: 20%;
-    margin-left: 5%;
-
-}
-
-.contatoaqui {
-    box-shadow: 40px 40px 60px -30px #e6683c; 
-}
-
-main.contato-principal section.contatoaqui img {
-    width: 90%;
-}
-
-main.contato-principal section.contatoaqui h3 {
-    font-size: 110%;
-    margin: 18px 0;
-}
-
-main.contato-principal section.contatoaqui span {
-    font-weight: 300;
-    max-width: 310px;
-    font-size: 100%;
-    margin-bottom: 35px;
-}
-
-.icon {
-    width: 250px;
-    height: 250px;
-    max-width: 80%;
-    margin-top: 10%;
-}
-
-.botaocontato{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-
-.instagram {
-    padding: 0.5rem 1rem;
-    border-radius: 32px;
-    border: 0;
-    cursor: pointer;
-    font-size: 80%;
-    font-weight: 300;
-    margin-bottom: 16px 0;
-    min-width: fit-content;
-    max-height: fit-content;
-    color:#FFF;
-    background: #f09433; 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
-
-}
-
-.whatsapp {
-    padding: 0.5rem 1rem;
-    border-radius: 32px;
-    border: 0;
-    cursor: pointer;
-    font-size: 80%;
-    font-weight: 300;
-    margin-bottom: 16px 0;
-    min-width: fit-content;
-    max-height: fit-content;
-    background-color:#25d366;
-	color:#FFF;
-}
-
-.whatsapp:hover{
-    background-color:#0c8639;
-	color:#FFF;
-    font-weight: 400;
-}
-
-.instagram:hover{
-    background: linear-gradient(45deg, #b96812 0%, #a13711 25%, #8f0d21 50%, #860d3e 75%, #81125e 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
-
-    color: #FFF;
-    font-weight: 400;
- 
-}
-
-.pontodois {
-    position: absolute;
-    top: -5%%;
-    left: auto;
-}
-
-
-footer {
-    position: absolute;
-    top: 510%;
-    text-align: center;
-    padding: 10px;
-    gap: 10px;
-    color: white;
-    align-items: center;
+/*RODAPE*/
+main.rodape {
+    color: #434343;
+    margin: 0;
+    width: 100%;
+    padding: 32px;
     display: flex;
     flex-direction: column;
-  }
+    align-items: center;
+}

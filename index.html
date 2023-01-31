@@ -7,116 +7,93 @@
     <title>Mille Cuori</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+   
+    
 
-    <header class="cabecalho">
-        <nav class="cabecalho-menu">
-          <a class="cabecalho-menu-item" href="#inicio"> INÍCIO </a>
-          <a class="cabecalho-menu-item" href="#contatolink"> CONTATO </a>
-          <a class="cabecalho-menu-item" href="#"> SOBRE NÓS </a>
-        </nav>
+   <!--MENU--> 
+   <header class="menu">
+            <nav class="menusuperior">
+                <a class="menusuperiorpalavra" href="#catalogolink">INÍCIO</a>
+                <a class="menusuperiorpalavra" href="#contatolink">CONTATO</a>
+                <a class="menusuperiorpalavra" href="#sobrenoslink">SOBRE NÓS</a>
+            </nav>
     </header>
 
+<!--LANDING PAGE-->
     <main class="landing">
-
-        <section>
-      
-            <div >
-            <img class="landing-page" src="assets/marca.png">
-            </div>
-            
-            <div><a href="#inicio">
-            <img class="botao" src="assets/milleicon.png"></a>
-            </div>
-            
-            </section>
-
+        <section class="paginainicial">
+            <div><img class="logo" src="assets/marca.png" alt="MARCA DA LOJA"></div>
+            <div><a href="#catalogolink"><img class="logopequena" src="assets/milleicon.png" alt="MARCA"></a></div>
+        </section>        
     </main>
 
-    <main class="cards">
 
-        <a class="pontoum" name="inicio"></a>
-        <h1>Conheça melhor a Mille Cuori</h1>
+<!--CATÁLOGO-->
 
-        <section class="card produtoum">
-
-            <div class="icon">
-            <img src="assets/icons/papelaria.png" alt="Contact vs.">
+    <main class="catalogo">
+    <section class="catalogo">
+        <div class="container">
+            <div class="titulocatalogo"><a href="#catalogolink"><h1 id="catalogolink">Conheça melhor a Mille Cuori!</h1></a></div>
+            <div class="cartoes">
+                <div class="cartao um">
+                    <div class="imagem um"><img src="assets/icons/jw.png" alt=""></div>
+                    <h1>NOME PRODUTO AQUI</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <button>CLIQUE AQUI</button>
+                </div>
+                <div class="cartao dois">
+                    <div class="imagem um"><img src="assets/icons/corporativo.png" alt=""></div>
+                    <h1>NOME PRODUTO AQUI</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <button>CLIQUE AQUI</button>
+                </div>
+                <div class="cartao tres">
+                    <div class="imagem um"><img src="assets/icons/marketing.png" alt=""></div>
+                    <h1>NOME PRODUTO AQUI</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <button>CLIQUE AQUI</button>
+                </div>
+                <div class="cartao quatro">
+                    <div class="imagem um"><img src="assets/icons/papelaria.png" alt=""></div>
+                    <h1>NOME PRODUTO AQUI</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <button>CLIQUE AQUI</button>
+                </div>
             </div>
-            
-            <h3>Papelaria Personalizada</h3>
-            <span>Aqui você vai encontrar todo tipo de produto relacionado a papelaria, e mais: nós podemos personalizar eles para você!</span>
-            <button>Veja mais!</button>
-
-        </section>
-
-
-        <section class="card produtodois">
-
-            <div class="icon">
-            <img src="/assets/icons/jw.png" alt="Contact vs.">
-            </div>
-            
-            <h3>Papelaria JW</h3>
-            <span>Se está procurando lembrancinhas, marca-páginas, capas e mais, vem conhecer nossos produtos.</span>
-            <button>Veja mais!</button>
-
-        </section>
-
-        <section class="card produtotres">
-
-            <div class="icon">
-            <img src="assets/icons/marketing.png" alt="Contact vs.">
-            </div>
-            
-            <h3>Marketing</h3>
-            <span>Podemos fazer seu pacote de Social Media completo.</span>
-            <button>Veja mais</button>
-
-        </section>
-
-    </section>
-
-    <section class="card produtoquatro">
-
-        <div class="icon">
-        <img src="assets/icons/corporativo.png" alt="Contact vs.">
         </div>
-        
-        <h3>Papelaria Corporativa</h3>
-        <span>Aqui você vai ter acesso aos melhores cartões de visita, panfletos, banners e mais!</span>
-        <button>Veja mais</button>
-
     </section>
+</main>
 
+<!--CONTATO-->
+<main class="contato">
+    <section class="titulocontato"><a href="#contatolink"><h1 id="contatolink">Fala com a gente!</h1></a></section>
+    <section class="cartaocontato">
+        <div class="imagemcontato"><img src="assets/icons/contato.png" alt=""></div>
+        <h3>Contato</h3>
+        <span>Aqui você pode conhecer melhor nosso trabalho e falar com um de nossos vendedores.</span>
+        <div class="botaocontato">
+            <button class="cartaocontato instagram">Instagram</button>
+            <button class="cartaocontato whatsapp">Whatsapp</button>
+        </div>
+    </section>
+</main>
+
+<!--SOBRE NÓS-->
+    <main class="sobrenos">
+        <section><a href="#sobrenoslink"><h1 id="sobrenoslink">Quem somos</h1></a></section>
+        <section class="sobre">
+            <div class="imagemsobre"><img src="assets/icons/quemsomos.png" alt=""></div>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        </section>
     </main>
 
-    <main class="contato-principal">
+<!--FOOTER-->
+    <main class="rodape">
 
-            <a class="pontodois" name="contatolink"></a>
-            <h1>Caso queira falar com a gente</h1>
+            <footer>Mille Cuori | 2023 | Todos os direitos reservados.</footer>
 
-            <section class="contatoaqui">
-                <div class="icon">
-                    <img src="assets/icons/contato.png">
-                </div>
-                <h3>Contate-nos</h3>
-                <span>Se quiser algum pedido especial ou mais detalhes dos nossos produtos, sinta-se a vontade para contatar um de nossos vendedores.</span>
-                <div class="botaocontato">
-              <a href="https://instagram.com/millecuori"><button class="instagram">Instagram</button></a>
-                <a href="https://wa.me/5549991220196?text=Ol%C3%A1%21+Tenho+interesse+em+um+produto."><button class="whatsapp">WhatsApp</button></a>
-                </div>
-            </section>
     </main>
-
-
-    <footer>
-        <p>Mille Couri</p>
-        <p>@Copyright - 2023</p>
-        <p><a>contato@millecouri.com</a></p>
-      </footer>
-
 </body>
 </html>

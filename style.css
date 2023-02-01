@@ -9,13 +9,14 @@ body{
     height: 100vh;
     width: 100%;
     color: #434343;
-
+    
     background-image: url("https://raw.githubusercontent.com/matheusfernandes1999/millecouri/main/assets/background/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 .menu{
     padding: 3%;
@@ -35,13 +36,13 @@ body{
 }
 
 .menusuperiorpalavra{
-    color: rgb(252, 252, 252);
+    color: #ffffff;
     font-weight: 450;
     transition: .4s ease;
 }
 
 .menusuperiorpalavra:hover{
-    color: rgb(212, 212, 212);
+    color: #9c3762;
     font-weight: 550;
     transform: 4;
 }
@@ -73,7 +74,7 @@ body{
     }
     
     .menusuperiorpalavra:hover{
-        color: rgb(212, 212, 212);
+        color: #9c3762;
         font-weight: 550;
         transform: 4;
     }
@@ -220,7 +221,7 @@ div.cartoes div.cartao button {
 
 /*STYLE DOS BOTOES*/
 div.cartoes div.cartao.um button {
-    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+    background: linear-gradient(to right, #9c3762, #db85ab);
     transition: .4s ease;
 }
 
@@ -230,18 +231,18 @@ div.cartoes div.cartao.dois button {
 }
 
 div.cartoes div.cartao.tres button {
-    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+    background: linear-gradient(to right, #fbc4b2, #cfa394);
     transition: .4s ease;
 }
 
 div.cartoes div.cartao.quatro button {
-    background: linear-gradient(to right, #e6e92b, #df9610);
+    background: linear-gradient(to right, #eb8607, #db8a26);
     transition: .4s ease;
 }
 
 /*BOTOES HOOVER*/
 div.cartoes div.cartao.um button:hover {
-    background: linear-gradient(to right, #7b4ec9, #b39fd3);
+    background: linear-gradient(to right, #79274a, #e094b7);
     transform: 2;
 }
 
@@ -251,19 +252,19 @@ div.cartoes div.cartao.dois button:hover {
 }
 
 div.cartoes div.cartao.tres button:hover {
-    background: linear-gradient(to right, #ac2c52, #b88595);
+    background: linear-gradient(to right, #dbac9c, #c5a49a);
     transform: 2;
 }
 
 div.cartoes div.cartao.quatro button:hover {
-    background: linear-gradient(to right, #b8bb11, #aa7717);
+    background: linear-gradient(to right, #c57008, #ec952b);
     transform: 2;
 }
 
 
 /*SOMBRA DOS CARDS*/
 div.cartoes div.cartao.um{
-    box-shadow: 20px 20px 50px -30px #610ee7;
+    box-shadow: 20px 20px 50px -30px #86244f;
     transition: .4s ease;
 }
 
@@ -273,19 +274,19 @@ div.cartoes div.cartao.dois{
 }
 
 div.cartoes div.cartao.tres{
-    box-shadow: 20px 20px 50px -30px #df1656;
+    box-shadow: 20px 20px 50px -30px #cf9582;
     transition: .4s ease;
 }
 
 div.cartoes div.cartao.quatro{
-    box-shadow: 20px 20px 50px -30px #f0e007;
+    box-shadow: 20px 20px 50px -30px #eb8607;
     transition: .4s ease;  
 }
 
 
 /*CARDS HOOVER*/
 div.cartoes div.cartao.um:hover {
-    box-shadow: 40px 40px 60px -30px #610ee7;
+    box-shadow: 40px 40px 60px -30px #9c3762;
     transform: 2;
 }
 div.cartoes div.cartao.dois:hover {
@@ -293,11 +294,11 @@ div.cartoes div.cartao.dois:hover {
     transform: 2;
 }
 div.cartoes div.cartao.tres:hover {
-    box-shadow: 40px 40px 60px -30px #df1656;
+    box-shadow: 40px 40px 60px -30px #eca78f;
     transform: 2;
 }
 div.cartoes div.cartao.quatro:hover {
-    box-shadow: 40px 40px 60px -30px #f0e007;
+    box-shadow: 40px 40px 60px -30px #eb8607;
     transform: 2;
 }
 

@@ -36,13 +36,27 @@ body{
 }
 
 .menusuperiorpalavra{
-    color: #ffffff;
+    background-image: linear-gradient(
+     to right,
+     #E2BD56,
+     #DAB34A,   
+     #FCE990,
+     #CB9D32,
+     #E2BD56
+     );
+    color: transparent;
+    -webkit-background-clip: text;
     font-weight: 450;
     transition: .4s ease;
 }
 
 .menusuperiorpalavra:hover{
-    color: #9c3762;
+    background-image: linear-gradient(
+        to right,
+        #FCE990,   
+        #BE8B1F,
+        #FCE990,
+        );
     font-weight: 550;
     transform: 4;
 }
@@ -110,7 +124,6 @@ body{
 
 .logopequena:hover{
     width: 35px;
-    height: 35px;
     transform: 4; 
 }
 
